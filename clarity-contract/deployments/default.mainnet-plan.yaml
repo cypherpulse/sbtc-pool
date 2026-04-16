@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: sbtc-lucky-raffle
+            expected-sender: SPGDS0Y17973EN5TCHNHGJJ9B31XWQ5YX8A36C9B
+            cost: 48690
+            path: contracts/sbtc-lucky-raffle.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.0"
