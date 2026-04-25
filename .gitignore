@@ -25,3 +25,4 @@ Thumbs.db
 deployments/*.yaml
 
 *.ps1
+*.sh
